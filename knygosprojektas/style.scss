@@ -1,0 +1,249 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+header {
+  .filter-menu {
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    right: 0;
+  }
+
+  nav {
+    display: flex;
+    align-items: center;
+    background: lightgrey;
+    font-size: 2em;
+    height: 40px;
+    button {
+      border-radius: 4px;
+    }
+    section {
+      border-radius: 4px;
+    }
+    #burger {
+      display: none;
+      cursor: pointer;
+      transition: 0.5s;
+    }
+    .rotate {
+      transform: rotate(-90deg);
+    }
+    div {
+      margin: 0 5px;
+    }
+    h6 {
+      font-size: 16px;
+    }
+    button {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-weight: bold;
+      width: 100px;
+      height: 30px;
+      margin: 0 5px;
+      cursor: pointer;
+      background-color: black;
+      color: grey;
+    }
+    div.find-book {
+      display: flex;
+      input {
+        height: 30px;
+      }
+    }
+    select {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 30px;
+      background: #000;
+      color: gray;
+    }
+  }
+}
+
+main {
+  img {
+    width: 200px;
+    height: 200px;
+    opacity: 1;
+    border-radius: 4px;
+  }
+  .main-container {
+    margin: 0px auto;
+    padding: 25px;
+    border-radius: 5px;
+  }
+  .record-input,
+  .record-display {
+    border-radius: 10px;
+    padding: 20px 0;
+    margin: 30px 0;
+    box-shadow: 0px 0px 6px 0px rgba(0, 0, 0, 1);
+    h2 {
+      padding: 10px 0;
+      text-align: center;
+      font-size: 22px;
+    }
+  }
+  .record-input {
+    color: #000;
+    background: #f0f0f0;
+    display: none;
+  }
+  .record-display {
+    background: lightgrey;
+    color: black;
+    position: relative;
+  }
+  .entry-form {
+    padding: 10px 0;
+  }
+  form {
+    display: flex;
+    flex-direction: column;
+    width: 75%;
+    margin: 0 auto;
+  }
+  form label {
+    font-weight: 500;
+    opacity: 0.6;
+  }
+  form label,
+  form input {
+    display: block;
+    outline: none;
+    border-radius: 25px;
+    border: none;
+  }
+
+  form input[type="text"],
+  form input[type="number"] {
+    color: #000;
+    font-size: 18px;
+    padding: 5px;
+    margin: 12px 0;
+  }
+  form input:focus {
+    background-color: #252525;
+    color: #fff;
+  }
+  .message {
+    text-align: center;
+    display: block;
+    width: 50%;
+    margin: 10px auto;
+    font-size: 16px;
+    color: #fff;
+    border-radius: 5px;
+    padding: 10px 0;
+    visibility: hidden;
+  }
+
+  .error {
+    background: #a3140d;
+    visibility: visible;
+  }
+  .success {
+    background: #2ba822;
+    visibility: visible;
+  }
+
+  .input-btns {
+    text-align: center;
+  }
+  button {
+    display: block;
+    width: 150px;
+    margin: 10px auto;
+    font-size: 16px;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 20px;
+    background: black;
+    color: white;
+    cursor: pointer;
+    opacity: 0.6;
+  }
+  button:hover {
+    opacity: 1;
+  }
+  #submit-btn span,
+  #cancel-btn span {
+    padding-right: 5px;
+  }
+  .record-display {
+    padding: 30px;
+  }
+  .record-el {
+    display: block;
+    padding: 4px 0;
+    text-align: center;
+    color: gray;
+  }
+  .record-item {
+    color: #000;
+    background: #fff;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 10px 0;
+    width: 330px;
+  }
+  .record-container {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+  }
+  select {
+    color: gray;
+    background: black;
+    height: 30px;
+    border-radius: 8px;
+    margin: 5px 0;
+    cursor: pointer;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    .filter-menu {
+      display: none;
+      justify-content: center;
+      align-items: center;
+    }
+    #burger {
+      display: block;
+      position: absolute;
+      top: 0;
+      right: 0;
+    }
+    button {
+      width: 200px;
+    }
+    input {
+      width: 200px;
+    }
+    select {
+      width: 200px;
+    }
+    div {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-between;
+    }
+  }
+}

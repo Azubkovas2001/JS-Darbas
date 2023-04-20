@@ -1,0 +1,244 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+header .filter-menu {
+  display: flex;
+  justify-content: center;
+  position: absolute;
+  right: 0;
+}
+header nav {
+  display: flex;
+  align-items: center;
+  background: lightgrey;
+  font-size: 2em;
+  height: 40px;
+}
+header nav button {
+  border-radius: 4px;
+}
+header nav section {
+  border-radius: 4px;
+}
+header nav #burger {
+  display: none;
+  cursor: pointer;
+  transition: 0.5s;
+}
+header nav .rotate {
+  transform: rotate(-90deg);
+}
+header nav div {
+  margin: 0 5px;
+}
+header nav h6 {
+  font-size: 16px;
+}
+header nav button {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  width: 100px;
+  height: 30px;
+  margin: 0 5px;
+  cursor: pointer;
+  background-color: black;
+  color: grey;
+}
+header nav div.find-book {
+  display: flex;
+}
+header nav div.find-book input {
+  height: 30px;
+}
+header nav select {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 30px;
+  background: #000;
+  color: gray;
+}
+
+main img {
+  width: 200px;
+  height: 200px;
+  opacity: 1;
+  border-radius: 4px;
+}
+main .main-container {
+  margin: 0px auto;
+  padding: 25px;
+  border-radius: 5px;
+}
+main .record-input,
+main .record-display {
+  border-radius: 10px;
+  padding: 20px 0;
+  margin: 30px 0;
+  box-shadow: 0px 0px 6px 0px rgb(0, 0, 0);
+}
+main .record-input h2,
+main .record-display h2 {
+  padding: 10px 0;
+  text-align: center;
+  font-size: 22px;
+}
+main .record-input {
+  color: #000;
+  background: #f0f0f0;
+  display: none;
+}
+main .record-display {
+  background: lightgrey;
+  color: black;
+  position: relative;
+}
+main .entry-form {
+  padding: 10px 0;
+}
+main form {
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  margin: 0 auto;
+}
+main form label {
+  font-weight: 500;
+  opacity: 0.6;
+}
+main form label,
+main form input {
+  display: block;
+  outline: none;
+  border-radius: 25px;
+  border: none;
+}
+main form input[type=text],
+main form input[type=number] {
+  color: #000;
+  font-size: 18px;
+  padding: 5px;
+  margin: 12px 0;
+}
+main form input:focus {
+  background-color: #252525;
+  color: #fff;
+}
+main .message {
+  text-align: center;
+  display: block;
+  width: 50%;
+  margin: 10px auto;
+  font-size: 16px;
+  color: #fff;
+  border-radius: 5px;
+  padding: 10px 0;
+  visibility: hidden;
+}
+main .error {
+  background: #a3140d;
+  visibility: visible;
+}
+main .success {
+  background: #2ba822;
+  visibility: visible;
+}
+main .input-btns {
+  text-align: center;
+}
+main button {
+  display: block;
+  width: 150px;
+  margin: 10px auto;
+  font-size: 16px;
+  font-weight: bold;
+  padding: 10px;
+  border-radius: 20px;
+  background: black;
+  color: white;
+  cursor: pointer;
+  opacity: 0.6;
+}
+main button:hover {
+  opacity: 1;
+}
+main #submit-btn span,
+main #cancel-btn span {
+  padding-right: 5px;
+}
+main .record-display {
+  padding: 30px;
+}
+main .record-el {
+  display: block;
+  padding: 4px 0;
+  text-align: center;
+  color: gray;
+}
+main .record-item {
+  color: #000;
+  background: #fff;
+  border-radius: 10px;
+  padding: 10px;
+  margin: 10px 0;
+  width: 330px;
+}
+main .record-container {
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+main select {
+  color: gray;
+  background: black;
+  height: 30px;
+  border-radius: 8px;
+  margin: 5px 0;
+  cursor: pointer;
+}
+
+@media screen and (max-width: 768px) {
+  header nav {
+    height: 160px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav .filter-menu {
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  header nav #burger {
+    display: block;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+  header nav button {
+    width: 200px;
+  }
+  header nav input {
+    width: 200px;
+  }
+  header nav select {
+    width: 200px;
+  }
+  header nav div {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+}/*# sourceMappingURL=style.css.map */
